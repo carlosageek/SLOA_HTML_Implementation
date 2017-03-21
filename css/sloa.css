@@ -1,0 +1,179 @@
+
+/* OMG A NAV BAR */
+body {
+    font-family: "Lato", sans-serif;
+    width: auto;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sideNav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 250%;
+    margin-left: 50px;
+}
+
+#menuButtonIcon {
+    float: left;
+    font-size: 30px;
+    width: 33%;
+    cursor: pointer
+}
+
+#log {
+    width: 33%;
+    display: inline-block;
+}
+
+#navTitle {
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+}
+
+#main {
+    width: 100%;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.text-indent {
+    text-indent: 25px;
+}
+
+.fluid-ratio-resize {
+    margin: auto;
+    max-width: 200px;
+    *height: 200px;
+    background-size: cover;
+    background: url(/images/Carlos.jpg) center;
+}
+
+.fluid-ratio-resize:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+}
+
+.white {
+    color: #000 !important;
+    background-color: white !important;
+}
+
+.green-grad {
+
+    background: linear-gradient(#009b46, #00843c); /* Standard syntax */
+}
+
+.orange-grad {
+    background: linear-gradient(#FFB3FF, #A50000); /* Standard syntax */
+}
+
+.blue {
+    color: #000 !important;
+    background-color: #0995ff !important;
+}
+
+.grey {
+    color: #000 !important;
+    background-color: #616161 !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right; !important;
+}
+
+.container-main {
+    padding: 0.01em 16px
+}
+
+.content {
+    max-width: 980px;
+    margin: auto
+}
+
+.panel {
+    padding: 0.01em 16px;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important
+}
+
+.display-container {
+    position: relative
+}
+
+.container-main:after, .panel:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.center {
+    text-align: center;
+}
+
+.blue {
+    color: #00467f !important;
+}
+
+.red {
+    color: #A50000 !important;
+}
+
+.green {
+    color:#009b46 !important;
+}
+
+.half-frame {
+    width: 49.5%;
+    height: 500px;
+}
+
+.form-control {width:120px;}
+
+.popover {max-width:400px;
+}
+
+.popover-title {
+    display: none;
+}
