@@ -1,10 +1,15 @@
-
 /* OMG A NAV BAR */
 body {
     font-family: "Lato", sans-serif;
+    background-image: url(bookbac.jpeg);
     width: auto;
 }
 
+footer  {
+    background-color: #556B2F;
+    text-align:center;
+
+}
 .sideNav {
     height: 100%;
     width: 0;
@@ -139,6 +144,9 @@ body {
 }
 
 .display-container {
+
+    text-align:center;
+    background: url(contain-bac.jpeg);
     position: relative
 }
 
