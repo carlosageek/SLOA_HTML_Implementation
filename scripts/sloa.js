@@ -33,14 +33,12 @@ images[3] = "/images/book4.jpeg";
 images[4] = "/images/book5.jpeg";
 
 var step = 1;
-//noinspection InfiniteRecursionJS
-function slideIt(){
-
+window.onload = function slideIt(){
     document.getElementById("slide").src = images[step];
     if (step < images.length-1)
         step++;
     else {
         step = 0;
     }
-}
-window.onload=setInterval(slideIt(), 1500);
+    setTimeout(slideIt, 3000);
+};
