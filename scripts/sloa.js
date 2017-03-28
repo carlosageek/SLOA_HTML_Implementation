@@ -42,3 +42,4 @@ window.onload = function slideIt(){
     }
     setTimeout(slideIt, 3000);
 };
+
