@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:overflow="http://www.w3.org/1999/xhtml">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type='text/javascript'
@@ -11,13 +11,16 @@
     <meta charset="UTF-8">
     <title>About US</title>
 </head>
-<body>
+<body class = "grey">
 <link rel="stylesheet" href="../css/sloa.css">
 <div id="mySideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-    <a href="">Home</a>
+    <a href="../">Home</a>
     <a href="../pages/search.html">Search &#128269;/ Modify</a>
     <a href="../pages/search.html" style="display: none">Edit</a>
+
+    <!-- added by Wesley Hsu -->
+    <a href="">About Us </a>
 </div>
 
 <div id="main" class="left green-grad">
@@ -26,7 +29,8 @@
         <h1 style="display: inline;">About US</h1>
     </div>
     <div style="text-align:right; display: inline" id="log">
-        <h1 class="btn"
+        <!-- the login button aligns to the top right on the corner -->
+        <h2 class="btn btn-primary btn-lg pull-right"
             id="no-live"
             data-placement="bottom"
             data-content="<div>
@@ -38,7 +42,7 @@
             <button type='submit'>Login</button>
             </label>
         </form>
-      </div>" data-html="true">Login</h1>
+      </div>" data-html="true">Login</h2>
     </div>
 </div>
 <br><br><br>
@@ -50,20 +54,28 @@
 <div class="display-container content card">
     <div class="display-container panel card white">
 
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <h2><b>About the <i>Creators</i> of this website!</b></h2>
+                </div>
+                <div class="back">
+                    <h3>Carlos Estrada</h3>
+                    <p> Born in Ixtapam, Mexico.
+                        Proficient in C++, Java, Python, HTML, JavaScript, PHP, MYSQL
+                    </p>
 
-    <h2>Carlos Estrada</h2>
-    <p> Born in Ixtapam, Mexico.
-        Proficient in C++, Java, Python, HTML, JavaScript, PHP, MYSQL
-    </p>
+                    <h4>Jason Burnell</h4>
+                    <p>Born in California. Proficient in HTML and Javascript.</p>
 
-    <h3>Jason Burnell</h3>
-    <p>Born in California. Proficient in HTML and Javascript.</p>
+                    <h4>Wesley Hsu</h4>
+                    <p>Born in Delaware, United States of America. Proficient in Java and HTML.</p>
 
-    <h3>Wesley Hsu</h3>
-    <p>Born in Delaware, United States of America. Proficient in Java and HTML.</p>
-
-    <h3>Julian Symphorien</h3>
-    <p>Born in Barbados. Proficient in C++, Java, and HTML.</p>
+                    <h4>Julian Symphorien</h4>
+                    <p>Born in Barbados. Proficient in C++, Java, and HTML.</p>
+                </div>
+            </div>
+        </div>
 </div>
 </div>
 

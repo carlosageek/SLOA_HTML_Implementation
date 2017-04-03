@@ -1,4 +1,4 @@
-/* OMG A NAV BAR */
+/* OMG A NAV BAR*/
 body {
     font-family: "Lato", sans-serif;
     background-image: url("/images/bookbac.jpeg");
@@ -6,7 +6,7 @@ body {
 }
 
 footer  {
-    background-color: #556B2F;
+    background: linear-gradient(#009b46, #00843c);
     position:absolute;
     bottom:0;
     width:100%;
@@ -19,6 +19,7 @@ h1  {
     text-shadow: 3px 3px 5px #CCCCCC;
     text-decoration: underline;
 }
+
 
 .sideNav {
     height: 100%;
@@ -65,7 +66,6 @@ h1  {
     width: 33%;
     display: inline-block;
 }
-
 
 #navTitle {
     text-align: center;
@@ -302,6 +302,7 @@ td.text-right {
 .form-control {width:120px;}
 
 .popover {max-width:400px;
+
 }
 
 .popover-title {
@@ -429,4 +430,54 @@ td.text-right {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:focus .dropbtn {
     background-color: #3e8e41;
+}
+
+h3:hover {
+    font-size: 500%;
+}
+h4:hover{
+    font-size: 400%;
+}
+/*entire container, keep perspective*/
+.flip-container{
+    perspective: 1000px;
+}
+
+/*flip the pane when hovered*/
+.flip-container:hover .flipper, .flip-container.hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/*flip speed goes here */
+.flipper {
+    transition: .6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/*hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/*front pane, placed above back */
+.front {
+    z-index: 2;
+    /*for firefox 31*/
+    transform: rotateY(0deg);
+}
+
+/*back, initially hidden pane */
+.back{
+    transform: rotateY(180deg);
 }
