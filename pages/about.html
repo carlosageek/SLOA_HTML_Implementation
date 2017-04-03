@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:overflow="http://www.w3.org/1999/xhtml">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type='text/javascript'
@@ -11,13 +11,16 @@
     <meta charset="UTF-8">
     <title>About US</title>
 </head>
-<body>
+<body class = "grey">
 <link rel="stylesheet" href="../css/sloa.css">
 <div id="mySideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-    <a href="">Home</a>
+    <a href="../">Home</a>
     <a href="../pages/search.html">Search &#128269;/ Modify</a>
     <a href="../pages/search.html" style="display: none">Edit</a>
+
+    <!-- added by Wesley Hsu -->
+    <a href="">About Us </a>
 </div>
 
 <div id="main" class="left green-grad">
@@ -26,7 +29,8 @@
         <h1 style="display: inline;">About US</h1>
     </div>
     <div style="text-align:right; display: inline" id="log">
-        <h1 class="btn"
+        <!-- the login button aligns to the top right on the corner -->
+        <h2 class="btn btn-primary btn-lg pull-right"
             id="no-live"
             data-placement="bottom"
             data-content="<div>
@@ -38,7 +42,7 @@
             <button type='submit'>Login</button>
             </label>
         </form>
-      </div>" data-html="true">Login</h1>
+      </div>" data-html="true">Login</h2>
     </div>
 </div>
 <br><br><br>
