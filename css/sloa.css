@@ -1,4 +1,4 @@
-/* OMG A NAV BAR */
+/* OMG A NAV BAR*/
 body {
     font-family: "Lato", sans-serif;
     background-image: url("/images/bookbac.jpeg");
@@ -6,7 +6,7 @@ body {
 }
 
 footer  {
-    background-color: #556B2F;
+    background: linear-gradient(#009b46, #00843c);
     position:absolute;
     bottom:0;
     width:100%;
@@ -19,6 +19,7 @@ h1  {
     text-shadow: 3px 3px 5px #CCCCCC;
     text-decoration: underline;
 }
+
 
 .sideNav {
     height: 100%;
@@ -65,7 +66,6 @@ h1  {
     width: 33%;
     display: inline-block;
 }
-
 
 #navTitle {
     text-align: center;
@@ -302,6 +302,7 @@ td.text-right {
 .form-control {width:120px;}
 
 .popover {max-width:400px;
+
 }
 
 .popover-title {
@@ -430,8 +431,6 @@ td.text-right {
 .dropdown:focus .dropbtn {
     background-color: #3e8e41;
 }
-
-/* test test Wesley Hsu */
 
 h3:hover {
     font-size: 500%;
