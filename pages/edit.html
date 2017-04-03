@@ -7,30 +7,26 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="scripts/sloa.js"></script>
+    <script src="../scripts/sloa.js"></script>
     <meta charset="UTF-8">
-    <title>Book Catalog/Shelf</title>
+    <title>Edit</title>
 </head>
 <body class="grey">
-<link rel="stylesheet" href="css/sloa.css">
+<link rel="stylesheet" href="../css/sloa.css">
 <div id="mySideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-    <a href="">Home</a>
-    <a href="pages/search.html">Book Shelf</a>
-    <a href="pages/search.html" style="display: none">Edit</a>
-
-    <!-- added by Wesley Hsu -->
-    <a href="pages/about.html">About Us </a>
+    <a href="../">Home</a>
+    <a href="../pages/search.html">Book Shelf</a>
+    <a href="#" style="display: none">Edit</a>
 </div>
 
 <div id="main" class="left green-grad">
     <span id="menuButtonIcon" onclick="openNav()">&#9776;</span>
     <div id="navTitle">
-        <h1 style="display: inline;">Home</h1>
+        <h1 style="display: inline;">Edit</h1>
     </div>
-    <!-- class changed for login button to be pushed to the top right corner -->
     <div style="text-align:right; display: inline" id="log">
-        <h1 class="btn btn-primary btn-lg pull-right"
+        <h1 class="btn"
             id="no-live"
             data-placement="bottom"
             data-content="<div>
@@ -45,16 +41,18 @@
       </div>" data-html="true">Login</h1>
     </div>
 </div>
-<br><br><br>
-<br>
-<br>
+<br><br><br><br><br><br>
 <div class="container-main content card">
-    <h2 class="green-grad panel card"><b>Assignments</b></h2>
-    <div class="panel card display-container white">
-        <p class="colorBlue"><strong>Website for managing and viewing books assigned to a course.</strong></p>
-        <img src="images/book1.jpeg" id="slide" style="padding: 2.5%" height="100%" width="100%">
+    <div class="panel card display-container white" style="margin:auto; padding: 2.5%">
+        <label class="colorBlue">
+            <input type="text" style="display: none" width="10px">
+            Course: <select id="courses"></select>
+            Year used: <input type="number" width="15px">
+            <br>
+            Author <input type="Text" width="25"><br>
+            Title <input type="text" width="40"><br>
+        </label>
     </div>
 </div>
-
 </body>
 </html>
