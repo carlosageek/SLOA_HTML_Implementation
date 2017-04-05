@@ -26,11 +26,11 @@ $(function() {
 });
 
 var images = [];
-images[0] = "/images/book1.jpeg";
-images[1] = "/images/book2.jpeg";
-images[2] = "/images/book3.jpeg";
-images[3] = "/images/book4.jpeg";
-images[4] = "/images/book5.jpeg";
+images[0] = "/images/book1.gif";
+images[1] = "/images/book2.gif";
+images[2] = "/images/book3.gif";
+images[3] = "/images/book4.gif";
+images[4] = "/images/book5.gif";
 
 var step = 1;
 window.onload = function slideIt(){
