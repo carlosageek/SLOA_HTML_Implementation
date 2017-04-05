@@ -1,7 +1,7 @@
 /* OMG A NAV BAR */
 body {
     font-family: "Lato", sans-serif;
-    background-image: url("/images/bookbac.jpeg");
+    background-image: url("/images/bookbac.gif");
     width: auto;
 }
 
@@ -146,7 +146,7 @@ footer  {
 .display-container {
 
     text-align:center;
-    background: url("/images/contain-bac.jpeg");
+    background: url("/images/contain-bac.gif");
     position: relative
 }
 
@@ -419,4 +419,15 @@ td.text-right {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:focus .dropbtn {
     background-color: #3e8e41;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE"
+}
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
 }
