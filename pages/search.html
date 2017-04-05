@@ -15,6 +15,7 @@
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     <a href="../">Home</a>
     <a href="#">Book Shelf</a>
+    <a href="../pages/search.html" style="display: none">Edit</a>
 </div>
 
 <div id="main" class="left green-grad">
@@ -42,17 +43,18 @@
             data-content='<div>
                 <form>
                      <div class="search-wrapper">
-        <form><label>Search: </label>
-            <input type="text"
-                   name="focus" required class = "search-box" placeholder = "Enter Search Term" />
-            <button class="close-icons" type="reset"></button>
-            By:
+        <form><label>
+            By:</label>
             <select title="Select" >
                 <option>Select One...</option>
                 <option>Course Number</option>
                 <option>Semester</option>
                 <option>Course&lsquo;s</option>
             </select>
+             <span id="tb_cont">
+    <input type="text" placeholder="Search" id="q" name="q"  />
+    <span id="clear_input">X</span>
+</span>
             <br><br>
             <button class="searchbtn">Search</button>
 
