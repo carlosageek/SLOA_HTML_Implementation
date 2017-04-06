@@ -17,7 +17,7 @@
 <?php
     $con = mysqli_connect("68.80.91.145", "SLOA", "CK8p1h15erbnttKU", "Capstone_SLOA");
     if(mysqli_connect_errno()){
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        echo "Failed to connect to My SQL: " . mysqli_connect_error();
     }
     $stmt = mysqli_query($con, "Select * FROM Books");
     echo "<div style ='float: left'>
