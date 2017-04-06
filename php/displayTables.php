@@ -13,9 +13,9 @@
 <body>
 
 <link rel="stylesheet" href="../css/sloa.css">
-<script type="text/javascript" src="scripts/sorttable.js"></script>
+<script type="text/javascript" src="../scripts/sorttable.js"></script>
 <?php
-    $con = mysqli_connect("68.80.91.145", "SLOA", "CK8p1h15erbnttKU", "Capstone_SLOA");
+    $con = mysqli_connect("personal.c1jqfnm7lsqk.us-east-1.rds.amazonaws.com", "programmer", "CK8p1h15erbnttKU", "Capstone_SLOA");
     if(mysqli_connect_errno()){
         echo "Failed to connect to My SQL: " . mysqli_connect_error();
     }
