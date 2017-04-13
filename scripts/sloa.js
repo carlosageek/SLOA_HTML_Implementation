@@ -26,11 +26,11 @@ $(function() {
 });
 
 var images = [];
-images[0] = "/images/book1.gif";
-images[1] = "/images/book2.gif";
-images[2] = "/images/book3.gif";
-images[3] = "/images/book4.gif";
-images[4] = "/images/book5.gif";
+images[0] = "images/book1.gif";
+images[1] = "images/book2.gif";
+images[2] = "images/book3.gif";
+images[3] = "images/book4.gif";
+images[4] = "images/book5.gif";
 
 var step = 1;
 window.onload = function slideIt(){
@@ -40,6 +40,6 @@ window.onload = function slideIt(){
     else {
         step = 0;
     }
-    setTimeout(slideIt, 3000);
+    setTimeout(slideIt, 5000);
 };
 

@@ -19,6 +19,7 @@
     if(mysqli_connect_errno()){
         echo "Failed to connect to My SQL: " . mysqli_connect_error();
     }
+
     $stmt = mysqli_query($con, "Select * FROM Books");
     echo "<div style ='float: left'>
           <table id='bookTable' class ='sortable'>
@@ -38,7 +39,7 @@
         echo "
             <tbody>
             <tr>
-                <td>".$row['Year']."</td>
+                <td >".$row['Year']."</td>
                 <td>".$row['Author']."</td>
                 <td>".$row['Book Title']."</td>
                 <td>".$row['Edition']."</td>
