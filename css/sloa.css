@@ -1,8 +1,8 @@
 /* OMG A NAV BAR*/
 body {
     font-family: "Lato", sans-serif;
-    background-image: url("/images/bookbac.jpeg");
     width: auto;
+    background-image: url("../images/bookbac.gif");
 }
 
 footer  {
@@ -156,7 +156,6 @@ h1  {
 .display-container {
 
     text-align:center;
-    background: url("/images/contain-bac.jpeg");
     position: relative
 }
 
