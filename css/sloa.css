@@ -431,6 +431,7 @@ td.text-right {
     background-color: #3e8e41;
 }
 
+
 h3:hover {
     font-size: 500%;
 }
@@ -448,8 +449,9 @@ h4:hover{
 }
 
 .flip-container, .front, .back {
-    width: 320px;
+    width: 960px;
     height: 480px;
+    text-align: center;
 }
 
 /*flip speed goes here */
