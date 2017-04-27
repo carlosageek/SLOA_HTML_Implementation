@@ -3,6 +3,7 @@ body {
     font-family: "Lato", sans-serif;
     width: auto;
     background-image: url("../images/bookbac.gif");
+    overflow-x: hidden;
 }
 
 footer  {
@@ -373,6 +374,8 @@ td.text-right {
 .btn {
     background-color: #4CAF50;
     color: white;
+    position: relative;
+    right: 50px;
     padding: 16px;
     font-size: 16px;
     border: none;
